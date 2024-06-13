@@ -23,9 +23,9 @@ const handleSubmit = (e) => {
    setsearchQuery(query)
 
 }
-
+const your_unsplash_access_key = import.meta.env.VITE_UNSPLASH_ACCESS_KEY;
     const fetchImages = () => {
-        Axios.get(`https://api.unsplash.com/search/photos?query=${query}&client_id=l5RGDHTqGaQydhv5dORRhAlT-19Fr39BAqy5NiYntEI&page=${page}&per_page=20`)
+        Axios.get(`https://api.unsplash.com/search/photos?query=${query}&client_id=${your_unsplash_access_key}&page=${page}&per_page=20`)
             .then((res) => {
                 console.log(query);
                 console.log(res.data.results);
