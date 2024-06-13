@@ -26,6 +26,7 @@
   padding-left: 10px;
   font-size: 20px;
   color:black;
+  background: white;
 }
 .form input:hover{
   background: lavender;
